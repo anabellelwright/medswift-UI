@@ -1,43 +1,18 @@
-<!-- <img src ="city.gif" alt="description of image" style="position: absolute; left: 300px; top: 200px;">
- -->
-
-<body></body>
-<script>
-  const gifWidth = 399
-  const gifHeight = 124
-  const gifOffsetX = 50
-  const gifOffsetY = 50
-  const numColumns = window.innerWidth / gifWidth
-  const numRows = window.innerHeight/ gifHeight * 0.8
-  const gifURL = 'city.gif'
-  
-  function createGif(x, y) {
-    const gif = document.createElement('img')	
-    gif.src = gifURL + '#' + Math.random()
-    gif.style.position = 'absolute'
-    gif.style.left = x + 'px'
-    gif.style.top = y + 'px'
-    document.body.appendChild(gif)  
+<style>
+ h1 { 
+  color: #6E15A4;
+  align-content: center;
+  font-family: Radikal-Medium;					
   }
-  
-  // createGif(0,0)
-  // createGif(399,0)
- 
-  function setup() {
-    for (let r = 0; r < numRows; r++) {
-      for (let c = 0; c < numColumns; c++) {
-        const x = c * gifWidth - gifOffsetX
-        const y = r * gifHeight - gifOffsetY
-        createGif(x,y)
-      }
-    }
-    
-    document.body.style.backgroundColor = 'purple'
-    document.body.style.overflow = 'hidden'
-  }
-  window.addEventListener('load', setup) 
+	
   
 
-  
-  
-</script>
+</style>
+
+
+
+<body>
+  <center>
+    <h1>MedSwift Social</h1>
+  </center>
+</body>
